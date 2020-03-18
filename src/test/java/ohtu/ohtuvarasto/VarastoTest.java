@@ -49,14 +49,14 @@ public class VarastoTest {
     @Test
     public void ottaminenPalauttaaOikeanMaaran() {
         varasto.lisaaVarastoon(8);
-
+        
         double saatuMaara = varasto.otaVarastosta(2);
 
         assertEquals(2, saatuMaara, vertailuTarkkuus);
     }
 
     @Test
-    public void ottaminenLisääTilaa() {
+    public void ottaminenLisaaTilaa() {
         varasto.lisaaVarastoon(8);
 
         varasto.otaVarastosta(2);
