@@ -17,18 +17,25 @@ public class Varasto {
     }
 
     public Varasto(double tilavuus, double alkuSaldo) { // kuormitetaan
+        this.tilavuus = ratkaiseTilavuus(tilavuus);
+        this.saldo = ratkaiseSaldo(alkuSaldo, tilavuus);
+    }
+    
+    private double ratkaiseTilavuus(double tilavuus) {
         if (tilavuus > 0.0) {
-            this.tilavuus = tilavuus;
+            return tilavuus;
         } else { // virheellinen, nollataan
-            this.tilavuus = 0.0;  // => käyttökelvoton varasto
+            return 0.0;  // => käyttökelvoton varasto
         }
-
+    }
+    
+    private double ratkaiseSaldo(double alkuSaldo, double tilavuus) {
         if (alkuSaldo < 0.0) {
-            this.saldo = 0.0;
+            return 0.0;
         } else if (alkuSaldo <= tilavuus) { // mahtuu
-            this.saldo = alkuSaldo;
+            return alkuSaldo;
         } else {
-            this.saldo = tilavuus;  // täyteen ja ylimäärä hukkaan!
+            return tilavuus;  // täyteen ja ylimäärä hukkaan!
         }
     }
 
