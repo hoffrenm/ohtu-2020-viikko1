@@ -4,6 +4,6 @@
 
 [![codecov](https://codecov.io/gh/hoffrenm/ohtu-2020-viikko1/branch/master/graph/badge.svg)](https://codecov.io/gh/hoffrenm/ohtu-2020-viikko1)
 
-[Tehtävien 14-16 repositorio](https://github.com/hoffrenm/ohtu-2020-tehtavat)
+[Palautusrepositorio, jossa on osien 1 ja 2 muut tehtävät](https://github.com/hoffrenm/ohtu-2020-tehtavat)
 
 
